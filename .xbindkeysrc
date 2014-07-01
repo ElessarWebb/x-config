@@ -30,6 +30,10 @@
   m:0x0 + c:123
   XF86AudioRaiseVolume
 
+"amixer set Master toggle"
+  m:0x0 + c:121
+  XF86AudioMute
+
 "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
   m:0x0 + c:96
   F12
