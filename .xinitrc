@@ -1,4 +1,4 @@
-#!/bin/sh
+ !/bin/sh
 #
 # ~/.xinitrc
 #
@@ -26,7 +26,7 @@ export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 sh ~/.fehbg
 
 # minimal compositor for shadows and stuff
-xcompmgr -c -t-5 -l-5 -r4.2 -o.55 -f -D 2 &
+compton --config /home/arjen/.config/compton.conf -b &
 
 # notifications
 dunst &
@@ -47,4 +47,10 @@ then
 	setup-hd &
 fi
 
+# start the sound modules
+# necessary to use equalizer pqaeq
+pactl load-module module-equalizer-sink
+pactl load-module module-dbus-protocol
+
+# yeah i3 :)
 exec i3
