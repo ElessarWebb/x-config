@@ -41,10 +41,6 @@
 
 ! To only apply colors to your terminal, for example, prefix
 
-URxvt.background:              S_base03
-URxvt.foreground:              S_base0
-URxvt.fading:                  40
-URxvt.fadeColor:               S_base03
 *cursorColor:             S_base1
 *pointerColorBackground:  S_base01
 *pointerColorForeground:  S_base1
@@ -67,13 +63,24 @@ URxvt.fadeColor:               S_base03
 *color15:                 S_base3
 
 ! URxvt settings
-URxvt.font: xft:Inconsolata:size=10
+URxvt.font: xft:Inconsolata:size=12
 URxvt.scrollBar: false
 URxvt.iso14755: false
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.perl-ext-common: default,clipboard
-URxvt.clipboard.autocopy: true
 URxvt.jumpScroll: false
+URxvt.depth: 32
+URxvt.background:              [80]#002b36
+URxvt.foreground:              S_base0
+URxvt.fading:                  40
+URxvt.fadeColor:               S_base03
+Urxvt.internalBorder: 5
+
+! woo nice Aad
+URxvt.keysym.C-Up: perl:font-size:increase
+URxvt.keysym.C-Down: perl:font-size:decrease
+URxvt.keysym.C-S-Up: perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
 
 ! dzen settings
 dmenu.background:		#333333
