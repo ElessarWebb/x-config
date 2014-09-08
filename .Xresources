@@ -21,7 +21,8 @@
 #define S_base02        #073642
 #define S_base01        #586e75
 #define S_base00        #657b83
-#define S_base0         #839496
+!#define S_base0        #839496
+#define S_base0         #B5C3C4
 #define S_base1         #93a1a1
 #define S_base2         #eee8d5
 #define S_base3         #fdf6e3
@@ -70,7 +71,7 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.perl-ext-common: default,clipboard
 URxvt.jumpScroll: false
 URxvt.depth: 32
-URxvt.background:              [80]#002b36
+URxvt.background:              [95]#002b36
 URxvt.foreground:              S_base0
 URxvt.fading:                  40
 URxvt.fadeColor:               S_base03
