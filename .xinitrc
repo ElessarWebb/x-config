@@ -1,4 +1,4 @@
- !/bin/sh
+#!/bin/sh
 #
 # ~/.xinitrc
 #
@@ -47,10 +47,11 @@ then
 	setup-hd &
 fi
 
-# start the sound modules
-# necessary to use equalizer pqaeq
-pactl load-module module-equalizer-sink
-pactl load-module module-dbus-protocol
+# yeah
+invertfn
 
-# yeah i3 :)
-exec i3
+# i3
+# exec i3
+# xmonad
+xsetroot -cursor_name left_ptr
+exec xmonad

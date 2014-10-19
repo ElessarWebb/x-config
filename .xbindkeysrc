@@ -11,6 +11,12 @@
 #keystate_capslock = enable
 #keystate_scrolllock= enable
 
+"urxvt"
+  Mod4 + Return
+
+"dmenu_run -b -h 80 -y 525 -nb \#073642 -nf \#DDDDDD -sb \#268bd2 -sf \#FFFFFF -o 1 -dim 0.6 -dc \#002B36"
+  Mod4 + r
+
 "xbindkeys_show"
   control+shift + q
 
