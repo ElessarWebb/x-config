@@ -78,7 +78,7 @@ URxvt.jumpScroll: false
 URxvt.depth: 32
 URxvt.background:              [75]#002b36
 URxvt.foreground:              S_base0
-URxvt.fading:                  40
+URxvt.fading:                  10
 URxvt.fadeColor:               S_base03
 URxvt.internalBorder: 0
 URxvt.letterSpace: -1
