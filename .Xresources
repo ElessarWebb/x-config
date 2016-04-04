@@ -76,9 +76,9 @@ URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 URxvt.jumpScroll: false
 URxvt.depth: 32
-URxvt.background:              [75]#002b36
+URxvt.background:              [85]#002b36
 URxvt.foreground:              S_base0
-URxvt.fading:                  10
+URxvt.fading:                  25
 URxvt.fadeColor:               S_base03
 URxvt.internalBorder: 0
 URxvt.letterSpace: -1
@@ -106,4 +106,9 @@ dmenu.font:				xft:Ubuntu:size=9
 
 dzen2.background:		#333333
 dzen2.foreground:		#999999
-dzen2.font:				xft:Ubuntu:size=9
+dzen2.font:				xft:Source Code Pro:size=10
+
+! rofi settings
+rofi.kb-accept-entry:                Control+m,Return,KP_Enter
+rofi.kb-row-up:                      Up,Control+k
+rofi.kb-row-down:                    Down,Control+j

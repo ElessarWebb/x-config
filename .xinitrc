@@ -18,7 +18,7 @@ xrdb -merge ~/.Xresources &
 sh ~/.fehbg
 
 # minimal compositor for shadows and stuff
-compton --config /home/arjen/.config/compton.conf -b &
+# compton --config /home/arjen/.config/compton.conf -b &
 
 # notifications
 dunst &
@@ -26,24 +26,25 @@ dunst &
 # use xbindkeys
 xbindkeys
 
+# rofi menu
+rofi -key-run SuperL-r -fuzzy
+
 # disable touchpad while typing
 syndaemon -t -k -i 2 -d &
 
 # start the power manager
-xfce4-power-manager &
+# xfce4-power-manager &
 
-# setup external screen if connected
-if `xrandr | grep "HDMI1 connected" -q`
-then
-	echo "done" > ~/.bla
-	setup-hd &
-fi
-
-# yeah
+# yeah for logitech keyboard only
 invertfn
 
-# i3
-# exec i3
-# xmonad
+# root pointy cursor looks better
 xsetroot -cursor_name left_ptr
+
+# compose key
+setxkbmap -option compose:ralt
+
 exec xmonad
+#exec startxfce4
+#sxhkd -f 100 &
+#exec bspwm
